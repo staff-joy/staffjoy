@@ -1,31 +1,12 @@
-# Staffjoy V2 - Fork
+# Staffjoy
 
-[![Build Status](https://github.com/LandRover/StaffjoyV2/actions/workflows/ci-master.yaml/badge.svg)](https://github.com/LandRover/StaffjoyV2/actions/workflows/ci-master.yaml) [![Godoc Reference](https://godoc.org/v2.staffjoy.com?status.svg)](https://godoc.org/v2.staffjoy.com)
+[![Build Status](https://github.com/staff-joy/staffjoy/actions/workflows/ci-master.yaml/badge.svg)](https://github.com/LandRover/StaffjoyV2/actions/workflows/ci-master.yaml) [![Godoc Reference](https://godoc.org/v2.staffjoy.com?status.svg)](https://godoc.org/v2.staffjoy.com)
 
-The main purpose of this StaffjoyV2 fork is education. I find in this project very inspiring and learn a lot from the implementation and engineering and monorepo structure.
-
-Current fork will focus on coding standards, testing, DevOps, React, Go and **maybe** a working software on the other end.
-
-There are 2 blood lines for this project:
-
-- The active development branch is [`master`](https://github.com/LandRover/StaffjoyV2), where new features are being added, dependencies updated and processes change.
-- The [`minimal-fixes-to-compile`](https://github.com/LandRover/StaffjoyV2/tree/minimal-fixes-to-compile) branch contains minimal changes to this original repo to make it compile without altering the original functionality. Mainly by specifying the version numbers to fit 2016 latest dependencies.
-
----
-
-## Staffjoy Original Notice
-
-[Staffjoy is shutting down](https://blog.staffjoy.com/staffjoy-is-shutting-down-39f7b5d66ef6#.ldsdqb1kp), so we are open-sourcing our code. This the second version of our product, a ground-up rewrite intended for small businesses, like restaurants. This product was very simple and did _not_ provide features like allowing workers to log in, clock-in, etc. If you want those features, please use [Staffjoy Suite](https://github.com/staffjoy/suite) You can learn about the design journey from V1 to V2 in [this blog post](https://blog.staffjoy.com/staffjoy-v2-ca15ff1a1169#.e7lmhde6v).
-
-![Staffjoy V2](https://user-images.githubusercontent.com/1312414/29037396-1f0913ba-7b69-11e7-983f-65bea21718d2.png)
-
-We started building V2 in August 2016, became feature complete in November 2016, and [launched to the press in January 2017](http://venturebeat.com/2017/01/10/staffjoy-raises-1-2-million-to-help-small-businesses-manage-workflow-scheduling/).
+The main purpose of Staffjoy is education. This project is very inspiring and I learned a lot from the implementation and engineering and monorepo structure.
 
 This is a _monorepo_, so all of the code for all of the services are in this repo. The core technologies are the [Bazel build system](https://bazel.build), [Kubernetes](https://kubernetes.io) (including its DNS for internal service discovery), [Redux](http://redux.js.org), [Go](https://golang.org), [Protocol Buffers](https://developers.google.com/protocol-buffers/), [gRPC](http://www.grpc.io), and [Yarn](https://yarnpkg.com). In staging and production, we used [Google Container Engine](https://cloud.google.com/container-engine/) and their managed databases.
 
 ## Services
-
-[Read about the V2 architecture on our blog](https://blog.staffjoy.com/staffjoys-v2-architecture-9d2fcb4015fd#.pggmlbtmw)
 
 [![Staffjoy V2 Architecture](https://i.imgur.com/W9UQMuk.jpg)](https://blog.staffjoy.com/staffjoys-v2-architecture-9d2fcb4015fd#.pggmlbtmw)
 
@@ -61,7 +42,7 @@ If you are running Go code, you should [set up your \$GOPATH](https://golang.org
 
 ```
 mkdir -p $GOPATH/src/
-git clone git@github.com:LandRover/StaffjoyV2.git $GOPATH/src/v2.staffjoy.com/
+git clone git@github.com:staff-joy/staffjoy.git $GOPATH/src/v2.staffjoy.com/
 ```
 
 ### Development station setup - One-time dependencies on host machine (laptop)
