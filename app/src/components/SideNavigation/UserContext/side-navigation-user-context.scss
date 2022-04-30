@@ -1,0 +1,36 @@
+@import "../../../../../frontend_resources/scss/colors";
+
+
+.user-context {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0;
+
+  button.mdc-button {
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    height: 65px;
+
+    .profile-icon {
+      width: 35px;
+      border-radius: 50%;
+    }
+
+    span {
+      display: inline-block;
+      margin: 8px 0 0 18px;
+
+    }
+  }
+
+  .mdc-menu {
+    background: $pure-white;
+    left: 15px !important;
+    bottom: 15px  !important;
+  }
+
+}

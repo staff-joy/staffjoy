@@ -1,0 +1,44 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: redis-master
+  labels:
+    app: staffjoy
+    role: master
+    tier: backend
+spec:
+  ports:
+  - port: 6379
+    targetPort: 6379
+  selector:
+    app: staffjoy
+    role: master
+    tier: backend
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: redis-master
+  labels:
+    app: staffjoy
+    role: master
+    tier: backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: staffjoy
+  template:
+    metadata:
+      labels:
+        app: staffjoy
+        role: master
+        tier: redis
+    spec:
+      containers:
+      - name: master
+        image: redis
+        ports:
+        - containerPort: 6379
+          name: redis

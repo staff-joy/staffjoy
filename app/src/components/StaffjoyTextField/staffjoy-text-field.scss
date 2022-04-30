@@ -1,0 +1,8 @@
+
+.staffjoy-text-field {
+    background-color: transparent !important;
+
+    &::before, &::after, &:hover, input {
+        background-color: transparent !important;
+    }
+}

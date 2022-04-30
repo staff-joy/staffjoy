@@ -1,0 +1,20 @@
+@import "../../../../frontend_resources/scss/colors";
+
+.mdc-drawer {
+  background-color: $staffjoy-palette-drawer-bg !important; // for some reason, theme settings do not use these. manually overriding.
+
+  > .mdc-list {
+    .mdc-list-item {
+      margin: 0;
+      padding-left: 30px;
+      border-radius: 0;
+      height: 56px;
+      text-transform: uppercase;
+      color: #757575;
+    }
+  }
+
+  .team-navigation {
+    margin-top: 24px;
+  }
+}

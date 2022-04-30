@@ -1,0 +1,141 @@
+package: v2.staffjoy.com
+import:
+  - package: github.com/dpapathanasiou/go-recaptcha
+    version: be5090b17804c90a577d345b6d67acbf01dc90ed
+  - package: github.com/ttacon/libphonenumber
+    version: ^1.2.1
+  - package: github.com/ttacon/builder
+    version: c099f663e1c235176c175644792c5eb282017ad7
+  - package: github.com/GeertJohan/go.rice
+    version: d954009f7238df62c766980934c8ea7f161d0e59
+  - package: github.com/daaku/go.zipexe
+    version: 74d766ac1dde7458348221869a7d1e7e5fa0597e
+  - package: github.com/golang-jwt/jwt/v4
+    version: ^4.2.0
+  - package: github.com/gorilla/sessions
+    version: ^1.2.1
+  - package: github.com/gorilla/securecookie
+    version: ^1.1.1
+  - package: github.com/gorilla/csrf
+    version: ^1.7.1
+  - package: github.com/gorilla/mux
+    version: ^1.8.0
+  - package: github.com/pkg/errors
+    version: ^0.9.1
+  - package: github.com/mailgun/mailgun-go/v4
+    version: ^4.6.0
+    repo: https://github.com/mailgun/mailgun-go
+  - package: github.com/json-iterator/go
+    version: ^1.1.12
+  - package: github.com/modern-go/reflect2
+    version: ^1.0.2
+  - package: github.com/modern-go/concurrent
+    version: ^1.0.3
+  - package: github.com/sirupsen/logrus
+    version: ^1.8.1
+  - package: github.com/stretchr/testify
+    version: ^1.7.0
+  - package: github.com/urfave/negroni
+    version: 1.0.0
+  - package: github.com/getsentry/raven-go
+    version: 5c24d5110e0e198d9ae16f1f3465366085001d92
+  - package: github.com/getsentry/sentry-go
+    version: ^0.12.0
+  - package: google.golang.org/grpc
+    version: ^1.33.3
+    repo: https://github.com/grpc/grpc-go
+    subpackages:
+      - "..."
+  - package: google.golang.org/genproto
+    version: 3ac035c7e7cbd86eb6d8b95be888cf83d73dedd3
+    repo: https://github.com/googleapis/go-genproto
+    subpackages:
+      - "..."
+  - package: github.com/grpc-ecosystem/grpc-gateway
+    version: ^1.15.2
+    subpackages:
+      - "..."
+  - package: google.golang.org/protobuf
+    version: ^1.27.1
+    repo: https://github.com/protocolbuffers/protobuf-go
+    subpackages:
+      - "..."
+  - package: github.com/gogo/protobuf
+    version: ^1.3.2
+    subpackages:
+      - "..."
+  - package: github.com/golang/glog
+    version: 9ef845f417d839250ceabbc25c1b26101e772dd7
+  - package: github.com/golang/protobuf
+    version: v1.5.2
+    subpackages:
+      - "..."
+  - package: github.com/certifi/gocertifi
+    version: 83314bf6d27c99d871fe836cd823f6da424d5149
+  - package: cloud.google.com/go
+    version: v0.99.0
+    repo: https://github.com/GoogleCloudPlatform/google-cloud-go
+    subpackages:
+      - "..."
+  - package: gopkg.in/intercom/intercom-go.v2
+    version: 2bd1af0ce4b2148380ce0f7482c6b81663977b93
+    repo: https://github.com/intercom/intercom-go
+  - package: github.com/google/go-querystring
+    version: ^1.1.0
+    subpackages:
+      - "..."
+  - package: google.golang.org/api
+    version: ^0.63.0
+    repo: https://github.com/google/google-api-go-client
+    subpackages:
+      - "..."
+  - package: google.golang.org/appengine
+    version: ^1.6.7
+    repo: https://github.com/golang/appengine
+  - package: github.com/go-gorp/gorp/v3
+    version: ^3.0.2
+    repo: https://github.com/go-gorp/gorp
+  - package: github.com/josharian/intern
+    version: ^1.0.0
+  - package: github.com/russross/blackfriday
+    version: ^2.1.0
+  - package: github.com/shurcooL/sanitized_anchor_name
+    version: ^1.0.0
+  - package: github.com/fatih/structs
+    version: ^1.1.0
+  - package: github.com/go-sql-driver/mysql
+    version: ^1.6.0
+  - package: golang.org/x/net
+    version: fe4d6282115f0528fd5bc04b5644ce8ba1f43a50
+    repo: https://github.com/golang/net
+    subpackages:
+      - html
+      - context
+  - package: golang.org/x/oauth2
+    version: d3ed0bb246c8d3c75b63937d9a5eecff9c74d7fe
+    repo: https://github.com/golang/oauth2
+  - package: golang.org/x/time
+    version: f0f3c7e86c11ca8f8b99d970e28445dda0b41195
+    repo: https://github.com/golang/time
+    subpackages:
+      - rate
+  - package: golang.org/x/crypto
+    version: e495a2d5b3d3be43468d0ebb413f46eeaedf7eb3
+    repo: https://github.com/golang/crypto
+    subpackages:
+      - bcrypt
+  - package: golang.org/x/text
+    version: ^0.3.7
+    repo: https://github.com/golang/text
+  - package: golang.org/x/sync
+    version: 036812b2e83c0ddf193dd5a34e034151da389d09
+    repo: https://github.com/golang/sync
+  - package: go.opencensus.io
+    version: ^0.23.0
+    repo: https://github.com/census-instrumentation/opencensus-go
+  - package: github.com/hashicorp/golang-lru
+    version: ^0.5.4
+  - package: github.com/googleapis/gax-go
+    version: v2.0.5
+  - package: github.com/google/go-cmp
+    version: ^0.5.6
