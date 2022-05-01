@@ -5,7 +5,7 @@
 VAGRANT_API_VERSION = 2
 
 # Local IP Address
-IP = '192.168.33.11'
+IP = '192.168.59.11'
 
 # Specs
 CPUS = 2
@@ -17,7 +17,7 @@ end
 
 Vagrant.configure(VAGRANT_API_VERSION) do |config|
   config.vm.box = "ubuntu/focal64"
-  config.vm.box_url = "https://cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-amd64-vagrant.box"
+  config.vm.box_url = "https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-amd64-vagrant.box"
   config.vm.network :private_network, ip: IP, hostsupdater: 'skip'
   config.vm.hostname = 'staffjoy-v2.local'
 
