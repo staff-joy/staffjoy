@@ -2,7 +2,7 @@
 
 [![Build Status](https://github.com/staff-joy/staffjoy/actions/workflows/ci-master.yaml/badge.svg)](https://github.com/staff-joy/staffjoy/actions/workflows/ci-master.yaml) [![Godoc Reference](https://godoc.org/v2.staffjoy.com?status.svg)](https://godoc.org/v2.staffjoy.com)
 
-The main purpose of Staffjoy is education. This project is very inspiring and I learned a lot from the implementation and engineering and monorepo structure.
+The main purpose of Staffjoy is to make creating employee work schedules easy and quick. This project is very inspiring and I learned a lot from the implementation and engineering and monorepo structure.
 
 This is a _monorepo_, so all of the code for all of the services are in this repo. The core technologies are the [Bazel build system](https://bazel.build), [Kubernetes](https://kubernetes.io) (including its DNS for internal service discovery), [Redux](http://redux.js.org), [Go](https://golang.org), [Protocol Buffers](https://developers.google.com/protocol-buffers/), [gRPC](http://www.grpc.io), and [Yarn](https://yarnpkg.com). In staging and production, we used [Google Container Engine](https://cloud.google.com/container-engine/) and their managed databases.
 
