@@ -8,8 +8,8 @@ VAGRANT_API_VERSION = 2
 IP = '192.168.59.11'
 
 # Specs
-CPUS = 2
-MEMORY = 1024 * 6
+CPUS = 3
+MEMORY = 1024 * 8
 
 def fail_with_message(msg)
   fail Vagrant::Errors::VagrantError.new, msg
